@@ -1,4 +1,4 @@
-# Exercícios P.3.2. de Estrutura de Dados
+# Exercício P.3.2. de Estrutura de Dados
 
 Desenvolva um programa que leia os dados de um arquivo de texto, contendo palavras em ordem alfabética, e que armazene cada uma das palavras em um vetor (cada elemento do vetor contém uma palavra).   
 Depois de carregar os dados no vetor, o programa solicita ao usuário a digitação de uma palavra e então faz a busca binária e informa a posição da palavra no vetor.  
