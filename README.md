@@ -26,23 +26,23 @@ Em vez de procurar linha por linha (como na busca linear), a busca binária faz 
 
 ### Passo de Comparação 1:
 - `meio = Math.floor((0 + 51) / 2) = 25`
-- Palavra no índice 25 = "lampada"
-- Compara "lampada" com "abacate"
-- "lampada" vem depois de "abacate"
+- Palavra no índice 25 = "melancia"
+- Compara "melancia" com "abacate"
+- "melancia" vem depois de "abacate"
 - Atualiza: fim = 24
 
 ### Passo de Comparação 2:
 - `meio = Math.floor((0 + 24) / 2) = 12`
-- Palavra no índice 12 = "galo"
-- Compara "galo" com "abacate"
-- "galo" vem depois de "abacate"
+- Palavra no índice 12 = "gato"
+- Compara "gato" com "abacate"
+- "gato" vem depois de "abacate"
 - Atualiza: fim = 11
 
 ### Passo de Comparação 3:
 - `meio = Math.floor((0 + 11) / 2) = 5`
-- Palavra no índice 5 = "camelo"
-- Compara "camelo" com "abacate"
-- "camelo" vem depois de "abacate"
+- Palavra no índice 5 = "cavalo"
+- Compara "cavalo" com "abacate"
+- "cavalo" vem depois de "abacate"
 - Atualiza: fim = 4
 
 ### Passo de Comparação 4:
