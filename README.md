@@ -62,12 +62,12 @@ Em vez de procurar linha por linha (como na busca linear), a busca binária faz 
 - Número de passos de comparação: 5
 
 ## Exemplo
-**Palavra:** lampada
+**Palavra:** melancia
 
 ### Passo de Comparação 1:
 - `meio = Math.floor((0 + 51) / 2) = 25`
-- Palavra no índice 25 = "lampada"
-- Compara "lampada" com "lampada"
+- Palavra no índice 25 = "melancia"
+- Compara "lampada" com "melancia"
 
 ### Resultado:
 - Posição no vetor: 25
