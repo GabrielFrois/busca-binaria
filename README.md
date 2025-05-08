@@ -6,12 +6,6 @@ O programa também deve fornecer como saída o número de passos de comparação
 As entradas para o programa devem ser o arquivo de texto contendo as palavras em ordem alfabética e a palavra buscada.  
 A saída o número de passos e em qual posição a palavra foi encontrada.
 
-## Resolução 
-- 1. Ler o arquivo e armazenar palavras num vetor: Usando o módulo fs para ler o arquivo e separar as palavras em um array;
-- 2. Solicitar a palavra ao usuário: Usando o módulo readline para ler a palavra digitada;
-- 3. Implementar a busca binária: Criar uma função que realize a busca binária e conte o número de comparações;
-- 4. Resultados: Exiba a posição da palavra (ou uma mensagem se não for encontrada) e o número de comparações.
-
 ## Busca Binária
 A busca binária é eficiente porque reduz o espaço de busca pela metade a cada passo, e o número de comparações feitas pode indicar essa eficiência.  
 Em vez de procurar linha por linha (como na busca linear), a busca binária faz `log₂(n)` comparações no pior caso, onde `n` é o número total de palavras.
