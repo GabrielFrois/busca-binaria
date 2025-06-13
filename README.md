@@ -1,18 +1,52 @@
-# Exercício P.3.2. de Estrutura de Dados
+# Exercício P.3.2. de Estrutura de Dados - Busca Binária
 
-Desenvolva um programa que leia os dados de um arquivo de texto, contendo palavras em ordem alfabética, e que armazene cada uma das palavras em um vetor (cada elemento do vetor contém uma palavra).   
-Depois de carregar os dados no vetor, o programa solicita ao usuário a digitação de uma palavra e então faz a busca binária e informa a posição da palavra no vetor.  
-O programa também deve fornecer como saída o número de passos de comparação que foram efetuados até que a palavra seja encontrada.  
-As entradas para o programa devem ser o arquivo de texto contendo as palavras em ordem alfabética e a palavra buscada.  
-A saída o número de passos e em qual posição a palavra foi encontrada.
+Este projeto demonstra uma implementação simples de **busca binária** em TypeScript. Ele lê um arquivo de texto contendo palavras (uma por linha), e permite ao usuário realizar buscas por palavras específicas utilizando o algoritmo de busca binária.
+
+## Estrutura do Projeto
+
+```
+busca-binaria/
+├── src/
+│   ├── palavras.txt         # Arquivo com lista de palavras (52 linhas)
+│   ├── mais-palavras.txt    # Arquivo com lista de palavras (261788 linhas)
+│   └── resolucao.ts         # Código principal com a lógica de leitura e busca
+├── package.json    
+├── package-lock.json
+├── tsconfig.json
+└── README.md
+```
+
+## Funcionalidades
+
+- Leitura de um arquivo `.txt` com palavras.
+- Algoritmo de **busca binária** com contagem de passos.
+- Interface interativa no terminal usando `readline`.
+
+## Instalação e Execução
+1. Clone o repositório:
+```bash
+git clone https://github.com/GabrielFrois/busca-binaria.git
+cd busca-binaria
+```
+2. Instale as dependências:
+```bash
+npm install
+```
+3. Execute o código:
+```bash
+npm run resolucao
+```
+4. Escolha um arquivo para o código ler:
+  - `src/palavras.txt`
+  - `src/mais-palavras.txt`
 
 ## Busca Binária
 A busca binária é eficiente porque reduz o espaço de busca pela metade a cada passo, e o número de comparações feitas pode indicar essa eficiência.  
 Em vez de procurar linha por linha (como na busca linear), a busca binária faz `log₂(n)` comparações no pior caso, onde `n` é o número total de palavras.
 
-- Passo 1: Compara a palavra com o elemento do meio do vetor;
-- Passo 2: Dependendo do resultado, vai para a metade superior ou inferior;
-- Passo 3: Novamente compara com o meio da nova metade;
+- **Passo 1:** Compara a palavra com o elemento do meio do vetor;
+- **Passo 2:** Dependendo do resultado, vai para a metade superior ou inferior;
+- **Passo 3:** Novamente compara com o meio da nova metade;
 - Assim por diante até terminar as comparações.
 
 ## Exemplo
@@ -54,15 +88,3 @@ Em vez de procurar linha por linha (como na busca linear), a busca binária faz 
 ### Resultado:
 - Posição no vetor: 0
 - Número de passos de comparação: 5
-
-## Exemplo
-**Palavra:** melancia
-
-### Passo de Comparação 1:
-- `meio = Math.floor((0 + 51) / 2) = 25`
-- Palavra no índice 25 = "melancia"
-- Compara "melancia" com "melancia"
-
-### Resultado:
-- Posição no vetor: 25
-- Número de passos de comparação: 1
