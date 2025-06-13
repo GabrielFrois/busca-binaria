@@ -17,27 +17,20 @@ function buscaBinaria(palavras: string[], alvo: string): { posicao: number, pass
   while (inicio <= fim) {
     passos++;
 
-    // Calcula o índice do meio do vetor
     const meio = Math.floor((inicio + fim) / 2);
-
-    // Compara a palavra no meio com a palavra buscada
     const comparacao = palavras[meio].localeCompare(alvo);
 
-    // Se for igual, retorna a posição e o número de passos
     if (comparacao === 0) {
       return { posicao: meio, passos };
     } 
-    // Se a palavra do meio for menor, continua a busca na metade direita
     else if (comparacao < 0) {
       inicio = meio + 1;
     } 
-    // Se for maior, continua a busca na metade esquerda
     else {
       fim = meio - 1;
     }
   }
 
-  // Se não encontrar, retorna posição -1 e número de passos
   return { posicao: -1, passos };
 }
 
@@ -62,7 +55,7 @@ function main() {
       const resultado = buscaBinaria(palavras, palavra);
 
       if (resultado.posicao !== -1) {
-        console.log(`Palavra encontrada na posição ${resultado.posicao}`);
+        console.log(`Palavra encontrada no índice: ${resultado.posicao}`);
       } else {
         console.log('Palavra não encontrada.');
       }
